@@ -15,6 +15,11 @@ print(f'Your are is {age}')
 lbs = 34
 print(lbs * 0.45)
 
+# Convert Kg to Lbs
+kg = 89
+lbs = kg / 0.45
+print(f'{kg} Kg are equal to: {lbs}')
+
 
 
 
