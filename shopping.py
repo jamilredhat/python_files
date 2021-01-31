@@ -11,4 +11,9 @@ def bill_amount(number):
     print("bill amount is: ", number)
 
 
+# Call functions
 
+
+available_items()
+selected_items()
+bill_amount(500)
