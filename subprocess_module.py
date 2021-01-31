@@ -6,7 +6,10 @@ import subprocess
 # Following will run command and redirect output and errors to subprocess.PIPE which can then be accessed using variable.communicate() method
 
 test = subprocess.Popen(['ls', '-lt', '/home'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
-output, errors = test.communicate()                        # Access output
+output, errors = test.communicate()               # Access output
+for line in output.splitlines():
+    print(line)
+print('---------------------------------------------')
 print(output)
 print(errors)
 
